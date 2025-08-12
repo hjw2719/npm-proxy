@@ -8,7 +8,7 @@ export default {
       'whatwg-encoding': 'registry.npmjs.org',
       'unplugin': 'registry.npmjs.org',
       '@babel/compat-data': 'registry.npmjs.org',
-      'default': 'registry.npmmirror.com', // 默认镜像
+      'default': 'registry.npmjs.org', // 默认镜像
     };
     url.hostname = mirrors[packageName] || mirrors['default'];
     const newRequest = new Request(url, request);
